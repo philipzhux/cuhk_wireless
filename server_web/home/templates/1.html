@@ -1,0 +1,60 @@
+
+
+<!-- Portfolio Modal - Title-->
+<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">{{title}}</h2>
+<!-- Icon Divider-->
+<div class="divider-custom">
+    <div class="divider-custom-line"></div>
+    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+    <div class="divider-custom-line"></div>
+</div>
+<!-- Portfolio Modal - Image-->
+<!--img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" /-->
+<br>
+<br>
+<div class="row justify-content-start">
+    <div class = "col-lg-4 justify-content-start text-left">
+        <h5>Current Load</h5>
+    </div>
+    <div class = "col-lg-6 justify-content-start text-left">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{load}}"
+            aria-valuemin="0" aria-valuemax="100" style="width:{{load}}%">
+              <span class="sr-only">{{load}}% Complete</span>
+            </div>
+        </div>
+    </div>
+    <div class = "col-lg-2 justify-content-start text-center">
+        <h5>{{load}} %</h5>
+    </div>
+</div>
+<br>
+<div class="row justify-content-start">
+    <div class = "col-lg-2 justify-content-start text-left">
+        <h5>Status:</h5>
+    </div>
+    <div class = "col-lg-10 justify-content-end text-right">
+        <h5 style="color:{{color}}">{{status}}</h5>
+    </div>
+</div>
+<br>
+<div class="row justify-content-start">
+    <div class = "col-lg-12 justify-content-start text-left">
+        <h5 >Recently Active APs:</h5>
+    </div>
+</div>
+<br>
+<div class="list-group">
+    {% for ap in ap_list %}
+    <a class="list-group-item list-group-item-action flex-column align-items-start active">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{ap.name}}</h5>
+        <h6 class="mb-1">Connection: {{ap.connection}}</h6>
+      </div>
+      <br>
+      <p class="mb-1 text-left">2.4 GHz Connections: {{ap.tghz}}</p>
+      <p class="mb-1 text-left">5 GHz Connections: {{ap.fghz}}</p>
+      <p class="mb-1 text-left">Historical Connection Average: {{ap.history}}</p>
+    </a>
+    {% endfor %}
+  </div>
