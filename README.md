@@ -1,10 +1,10 @@
 # LGU Heatmap
 
 
-```GEB 2503 Smart City``` Final Project Made by A Group with Members:
-* **119010486 Zhu Chuyan**
-* 119010450 Zhang Yizhan
-* 119010106 Hu Zexi
+```2503 Smart City``` Final Project Made by A Group with Members:
+* **Zhu Chuyan**
+* Zhang Yizhan
+* Hu Zexi
 
 ## I. Main idea
 The main idea of the project is to use the terminal devices connected to campus wireless network
