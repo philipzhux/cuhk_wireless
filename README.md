@@ -1,4 +1,4 @@
-# LGU Heatmap
+# Lib Heatmap
 
 
 ```2503 Smart City``` Final Project Made by A Group with Members:
